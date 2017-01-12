@@ -3,23 +3,39 @@ CSS Workshop 1
 
 The first in a series of workshops for learning CSS.
 
-#### Install with Bower
+#### Requirements
 
-This is the best way to install. It will download all required dependencies.
+The project requires NodeJS + npm, and port 8000 free to work.
+
+#### Get the repository
+
+This is the simple way to get the project. It will download all files.
 
 ```sh
-$ bower install angular-base-app
+git clone https://github.com/cristiansarov/CSSWorkshop1.git
 ```
 
-#### Manual download
+#### Get the npm dependecies
 
-First you'll have to download the dependencies: `angular, angular-animate, angular-cookies, angular-sanitize, angular-touch, angular-translate and angular-ui-router`.
+In every folder, run:
 
-After you've included all of these in your project, download the [archive](https://github.com/csarov/angular-base-app/archive/master.zip) and include it in your project.
+```sh
+npm install
+```
 
-### Adding the module to your project
-When you are done downloading all the dependencies and project files the only remaining part is to add the module on your project like this:
+### Run exercise1
 
-```js
-angular.module('myProject', ['baseApp']);
+To start working, just run:
+
+```sh
+cd exercise1
+npm run dev
+```
+
+### Go to the next exercise
+
+```sh
+CTRL + C
+cd ../exercise2
+npm run dev
 ```
