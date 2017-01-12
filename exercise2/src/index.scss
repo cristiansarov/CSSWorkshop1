@@ -1,0 +1,32 @@
+body {
+  display:flex;
+  .sidebar {
+    width: 500px;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    background: #1d073e;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -1px;
+      border-top: 100vh solid #fff;
+      border-left: 140px solid transparent;
+    }
+    &__header {
+
+    }
+    &__content {
+      flex-grow: 1;
+    }
+    &__footer {
+      background: #4e3f69;
+      height: 90px;
+    }
+  }
+  .main {
+    flex-grow: 1;
+  }
+}

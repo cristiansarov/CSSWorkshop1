@@ -1,0 +1,6 @@
+body {
+  display:flex;
+  font-family: Ubuntu, sans-serif;
+  @import './scss/sidebar';
+  @import './scss/main';
+}
