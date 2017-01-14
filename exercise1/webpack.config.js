@@ -17,12 +17,8 @@ process.env.REACT_WEBPACK_ENV = env;
 
 
 const path = require('path');
-const _ = require('lodash');
 let webpack = require('webpack');
-let BowerWebpackPlugin = require('bower-webpack-plugin');
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
-let extractCSS = new ExtractTextPlugin('app.css');
 
 
 /**
@@ -58,13 +54,6 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.(js|jsx)$/,
-        include: config.srcPath,
-        loader: 'eslint-loader'
-      }
-    ],
     loaders: [
       {
         test: /\.css$/,
@@ -91,12 +80,12 @@ module.exports = {
         loader: 'file?name=fonts/[hash].[ext]'
       }, {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        include: [path.join(__dirname, './src/Main/assets/vendor/fonts')],
+        include: [path.join(__dirname, './src/fonts')],
         loader: 'url?limit=10000&mimetype=image/svg+xml&name=fonts/[hash].[ext]'
       },
       {
         test: /\.(svg|png|jpg|gif|mp4)$/,
-        exclude: [path.join(__dirname, './src/Main/assets/vendor/fonts')],
+        exclude: [path.join(__dirname, './src/fonts')],
         loader: 'file-loader?limit=8192&name=assets/[name].[ext]'
       },
       {
@@ -105,7 +94,7 @@ module.exports = {
       },
       {
         test: /\.(js|jsx)$/,
-        loader: 'react-hot!babel-loader',
+        loader: 'babel-loader',
         include: [path.join(__dirname, './src')]
       }
     ]
@@ -122,10 +111,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
-    new webpack.NoErrorsPlugin(),
-    new BowerWebpackPlugin({
-      searchResolveModulesDirectories: false
-    }),
-    extractCSS
+    new webpack.NoErrorsPlugin()
   ]
 };
