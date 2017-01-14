@@ -31,19 +31,19 @@ git clone https://github.com/cristiansarov/CSSWorkshop1.git
 
 To start working on an exercise:
 
-1. Go to the folder
+#### Go to the folder
 
 ```sh
 cd exercise1
 ```
 
-2. Install dependencies
+#### Install dependencies
 
 ```sh
 npm install
 ```
 
-3. Start the development server
+#### Start the development server
 
 ```sh
 npm run dev
