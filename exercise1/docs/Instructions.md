@@ -12,6 +12,8 @@ The sidebar must be a fixed width, and the main content should resize on window 
 
 ### Step 1 - create the containers
 
+Notice strange names for html classes. Don't worry we are using BEM more info [here](http://getbem.com/naming/).
+
 ```html
 <div class="sidebar">
     <div class="sidebar__header">
