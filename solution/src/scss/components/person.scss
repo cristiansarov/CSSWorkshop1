@@ -1,0 +1,48 @@
+.person {
+  display:flex;
+  align-items: center;
+  max-width: 660px;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__avatar {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    width: 160px;
+    z-index: 1;
+  }
+  &__image {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+  }
+  &__meta {
+    flex-grow: 1;
+  }
+  &__title {
+      font-size: 20px;
+      margin: 0 0 7px 10px;
+    }
+  &__progress {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    height: 44px;
+    align-items: center;
+    overflow: hidden;
+    margin-left: -12px;
+  }
+  &__bar {
+      background: #f5a623;
+      margin-right: 10px;
+      height: 100%;
+    }
+  &__text {
+    font-weight: bold;
+    color: #f5a623;
+    font-size: 21px;
+  }
+}

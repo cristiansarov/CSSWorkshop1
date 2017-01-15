@@ -1,0 +1,117 @@
+.sidebar {
+  width: 500px;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  background: #1d073e;
+  position: relative;
+  color:#fff;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    border-top: 100vh solid #fff;
+    border-left: 140px solid transparent;
+  }
+  &__header {
+    padding: 50px 120px 0 0;
+  }
+  &__logo {
+    display:block;
+    margin: 10px auto;
+    &:nth-child(1) {
+      width: 300px;
+    }
+    &:nth-child(2) {
+      width: 220px;
+    }
+  }
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px 100px 0;
+    text-align: center;
+    background: url('assets/sidebar_background.png') no-repeat -35px bottom;
+    background-size: 490px;
+  }
+  &__title {
+    color: #a283d8;
+  }
+  &__wrapper {
+    background: url('assets/stars.png') no-repeat center;
+    background-size: contain;
+    padding: 0 30px;
+  }
+  &__avatar {
+    padding:10px;
+    border-radius: 50%;
+    display:block;
+    border: 1px solid #463360;
+  }
+  &__icon {
+      background: #fff;
+      color: #1d073e;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+      border-radius: 50%;
+  }
+  &__progress-text {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  &__progress-bar {
+    background:#fff;
+    display: flex;
+    height: 2px;
+  }
+  &__progress-bg {
+    width: 33.33%;
+    &.active {
+      background: #f7931e;
+      margin: -2px;
+      border-radius: 3px;
+    }
+  }
+  &__footer {
+    background: #4e3f69;
+    display: flex;
+    padding: 15px 30px 15px 15px;
+  }
+  &__meta {
+    flex-grow: 1;
+  }
+  &__subtitle {
+    margin: 0;
+    font-size: 20px;
+  }
+  &__info {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  &__square {
+      display: inline-block;
+      width: 30px;
+      margin-right: 10px;
+    }
+  &__powered {
+    min-width: 110px;
+    width: 110px;
+    border-left: 1px solid #1d073e;
+    padding-left: 15px;
+    z-index: 10;
+  }
+  &__knolix {
+    display:block;
+    width: 100%;
+  }
+}
