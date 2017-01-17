@@ -19,14 +19,14 @@ The `.main>div` element must have 100% width to match the flex container width.
 ```html
 <!--PERSON 1-->
 <div class="person">
-    <div class="person__image">
-        <img src="assets/person1.jpg" />
+    <div class="person__avatar">
+        <img class="person__image" src="assets/person1.jpg" />
     </div>
     <div class="person__meta">
-        <h3>Andreea Popescu</h3>
+        <h3 class="person__title">Andreea Popescu</h3>
         <div class="person__progress">
-            <div class="person__progress-bar" style="width:30.52%"></div>
-            <div class="person__progress-text">30.52%</div>
+            <div class="person__bar" style="width:30.52%"></div>
+            <div class="person__text">30.52%</div>
         </div>
     </div>
 </div>
@@ -40,13 +40,13 @@ The `.person__image` element has `#ccc` border color, 50% border radius, 160px w
 
 The `.person__meta` element has `flex-grow: 1` property to make if resizable, opposed to the image.
 
-Style the `.person__meta>h3` element with the margin and font size desired.
+Style the `.person__title` element with the margin and font size desired.
 
 The `.person__progress` element is a flexbox with `#ccc` border color, `-12px` left margin, `5px` border radius and `44px` height.
 
-The `.person__progress-bar` element has `#f5a623` background color and `100%` height.
+The `.person__bar` element has `#f5a623` background color and `100%` height.
 
-The `.person__progress-text` element has `#f5a623` color and `21px` font size.
+The `.person__text` element has `#f5a623` color and `21px` font size.
 
 ## Workshop complete
 
