@@ -1,9 +1,9 @@
 body {
-  display:flex;
+  display: flex;
   .sidebar {
     width: 500px;
     height: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     background: #1d073e;
     position: relative;
@@ -16,7 +16,7 @@ body {
       border-left: 140px solid transparent;
     }
     &__header {
-
+      
     }
     &__content {
       flex-grow: 1;
