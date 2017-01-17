@@ -1,5 +1,5 @@
 .person {
-  display:flex;
+  display: flex;
   align-items: center;
   max-width: 660px;
   margin: 0 auto;
@@ -23,9 +23,9 @@
     flex-grow: 1;
   }
   &__title {
-      font-size: 20px;
-      margin: 0 0 7px 10px;
-    }
+    font-size: 20px;
+    margin: 0 0 7px 10px;
+  }
   &__progress {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -36,10 +36,10 @@
     margin-left: -12px;
   }
   &__bar {
-      background: #f5a623;
-      margin-right: 10px;
-      height: 100%;
-    }
+    background: #f5a623;
+    margin-right: 10px;
+    height: 100%;
+  }
   &__text {
     font-weight: bold;
     color: #f5a623;
