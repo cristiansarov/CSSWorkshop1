@@ -48,6 +48,40 @@ The `.person__bar` element has `#f5a623` background color and `100%` height.
 
 The `.person__text` element has `#f5a623` color and `21px` font size.
 
+### Step 4 - Structure the Sass project
+
+Let's start splitting all the style in different files for better maintenance using the structure below. 
+
+
+```
+scss/
+|
+|-- base/                 # Common modules
+|   |-- _variables.scss   # Create and include css variables (fonts, color) as you desire (don't forget to use it in other files)
+|   ...
+|
+|-- components/           # Components modules
+|   |-- _person.sass      # Include .person styles
+|   |-- _sidebar.scss     # Include .sidebar styles
+|   ...
+|
+|-- layout/               # Layout modules
+|   |-- main.scss         # Include body and .main styles
+|   ...
+|
+`-- index.scss            # primary Sass file where we import all the Scss files
+```
+Import all the files in the index.scss.
+
+```scss
+  // Layout
+  @import './scss/layout/main';
+
+  // Components
+  @import './scss/components/sidebar';
+  @import './scss/components/person';
+```
+
 ## Workshop complete
 
 Congratulation, you have finished the workshop!

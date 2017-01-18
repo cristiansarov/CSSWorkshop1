@@ -36,13 +36,13 @@
     margin-left: -12px;
   }
   &__bar {
-    background: #f5a623;
+    background: $orange;
     margin-right: 10px;
     height: 100%;
   }
   &__text {
     font-weight: bold;
-    color: #f5a623;
+    color: $orange;
     font-size: 21px;
   }
 }

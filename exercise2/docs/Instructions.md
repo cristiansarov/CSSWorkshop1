@@ -68,7 +68,7 @@ The `.sidebar__progress-bar` is a flexbox with a height of 2px and white backgro
 
 The `.sidebar__progress-bg` has a width of 33% from parent width.
 
-The `.sidebar__progress-bg.active` element has a `#f7931e` background color, -2px margin and 3px border radius.
+The `.sidebar__progress-bg.active` element has a `#f5a623` background color, -2px margin and 3px border radius.
 
 ### Step 3 - Add the footer elements
 
